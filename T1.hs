@@ -457,5 +457,3 @@ plantaoCorreto p _ = ordena (mapeia (\(h, l) -> (h, ordena l)) tudo)
         compras     = agrupa (ordena horaCompra)
         medicadas   = mapeia (\(h, ms) -> (h, [Medicar m | m <- ms])) p
         tudo        = agrupa (compras ++ medicadas)
-
-        
